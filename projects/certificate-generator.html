@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certificate Generator & Sender</title>
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body style="background:#0b1220;color:#fff;padding:20px;">
+  <div class="container">
+    <h2>Certificate Generator & Sender</h2>
+    <p><em>Tech:</em> Python, pandas, Pillow, openpyxl (Excel), optional SMTP</p>
+    <img src="../assets/img/certification/Devtown.jpg" alt="Certificates" class="img-fluid" style="max-height:260px;object-fit:contain;margin-bottom:12px;background:#fff;padding:6px;">
+    <p>This project automates generating participation certificates from a Canva-designed template using recipient data from an Excel sheet. It inserts names/events into the template and saves personalized certificate images.</p>
+
+    <h4>Key Features</h4>
+    <ul>
+      <li>Read recipient data from an Excel (`students.xlsx`)</li>
+      <li>Dynamically render name & event onto a certificate template (Shelley Script font)</li>
+      <li>Save generated certificates to `certificates/` directory</li>
+      <li>Optional: SMTP email sending (coming soon in repo)</li>
+    </ul>
+
+    <h4>Quick start</h4>
+    <pre style="background:#071024;color:#fff;padding:10px;border-radius:6px;">pip install pandas pillow openpyxl
+python generate_certificates.py</pre>
+
+    <p><a href="https://github.com/suyash1702/Certificate_Generator_and_Sender" target="_blank" style="color:#12d640">View on GitHub</a></p>
+  </div>
+</body>
+</html>
